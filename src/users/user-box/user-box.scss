@@ -1,0 +1,50 @@
+user-box {
+  display: block;
+  overflow: hidden;
+}
+
+.last-user-box {
+  .user-box {
+    border-bottom: 1px solid black;
+  }
+}
+.user-box {
+  padding: 5px;
+  border: 1px solid black;
+  border-bottom: none;
+  .title {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    img {
+      width: 60px;
+      height: 30px;
+      margin-right: 5px;
+      flex: 0 0 auto;
+    }
+    h3 {
+      flex: 1 1 auto;
+      display: inline-block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin: 0;
+      white-space: nowrap;
+    }
+    .map-sync {
+      cursor: pointer;
+      font-size: 2em;
+      margin-right: 5px;
+      color: red;
+    }
+  }
+  .email {
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .actions {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}

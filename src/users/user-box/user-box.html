@@ -1,0 +1,15 @@
+<div class="user-box">
+    <div class="title">
+        <i class="fa fa-map-marker map-sync" aria-hidden="true"
+           title="center map on this user"
+           ng-click="$ctrl.zoomToUser()"></i>
+        <img src="{{$ctrl.user.picture}}">
+        <h3>{{$ctrl.user.name | capitalizeName}}</h3>
+    </div>
+    <div>age: {{$ctrl.user.age}}</div>
+    <div class="email">email: {{$ctrl.user.email}}</div>
+    <div>Is Active: {{$ctrl.user.isActive}}</div>
+    <div class="actions">
+        <button type="button" ng-click="$ctrl.remove()">Remove</button>
+    </div>
+</div>

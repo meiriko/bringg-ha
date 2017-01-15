@@ -1,0 +1,10 @@
+button.active-sort {
+  border: 2px solid red;
+}
+user-list {
+  display: block;
+  .users-list {
+    height: 100%;
+    overflow-y: auto;
+  }
+}

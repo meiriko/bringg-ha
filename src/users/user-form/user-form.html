@@ -1,0 +1,11 @@
+<form class="user-form" name="user_form" ng-submit="$ctrl.submit()">
+    <div><label><span>Name: </span><input type="text" ng-model="$ctrl.user.name" required placeholder="user name"></label></div>
+    <div><label><span>Age: </span><input type="number" ng-model="$ctrl.user.age" required placeholder="age"></label></div>
+    <div><label><span>Picture: </span><input type="text" ng-model="$ctrl.user.picture" required placeholder="picture url"></label></div>
+    <div><label><span>Email: </span><input type="email" ng-model="$ctrl.user.email" required placeholder="email"></label></div>
+    <div><label><span>Longitude: </span><input type="number" step="any" ng-model="$ctrl.user.longitude" required placeholder="longitude"></label></div>
+    <div><label><span>Latitude: </span><input type="number" step="any" ng-model="$ctrl.user.latitude" required placeholder="latitude"></label></div>
+    <div><label>Is Active: <input type="checkbox" ng-model="$ctrl.user.isActive"></label></div>
+    <button type="submit">Create</button>
+    <button type="button" ng-click="$ctrl.cancel()">Cancel</button>
+</form>

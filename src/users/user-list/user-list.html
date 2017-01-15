@@ -1,0 +1,14 @@
+<div class="actions">
+    <button type="button" ng-click="$ctrl.createUser()">Create New User</button>
+    <button type="button" ng-click="$ctrl.sortOn = 'age'"
+            ng-class="{'active-sort': $ctrl.sortOn === 'age'}">Sort By Age
+    </button>
+    <button type="button" ng-click="$ctrl.sortOn = 'name'"
+            ng-class="{'active-sort': $ctrl.sortOn === 'name'}">Sort By Name
+    </button>
+</div>
+<div class="users-list">
+    <user-box ng-repeat="user in $ctrl.users | orderBy:$ctrl.sortOn track by user.id"
+              ng-class="{'last-user-box': $last}"
+              user="user"></user-box>
+</div>

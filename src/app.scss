@@ -1,0 +1,43 @@
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import '../node_modules/font-awesome/css/font-awesome.min.css';
+
+* {
+  border-radius: 0px !important;
+}
+html, body, app {
+  height: 100%;
+  overflow: hidden;
+}
+app {
+  display: block;
+}
+.container-fluid {
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  height: 100%;
+  ui-view.list {
+    flex: 1 1 0;
+    display: block;
+    overflow-x: hidden;
+  }
+  ui-view.content {
+    flex: 2 2 0;
+    padding: 10px;
+    overflow-y: auto;
+    display: block;
+    overflow-x: hidden;
+  }
+}
+
+.box {
+  width: 70%;
+  height: 200px;
+  background: #FFF;
+  margin: 40px auto;
+}
+
+.sheet {
+  box-shadow: 0 10px 6px -6px #777;
+}

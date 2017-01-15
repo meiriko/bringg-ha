@@ -1,0 +1,9 @@
+users-map {
+  height: 100%;
+  div[map-lazy-load] {
+    height: 100%!important;
+    ng-map {
+      height: 100%!important;
+    }
+  }
+}
