@@ -16,7 +16,7 @@ angular
     })
     .config(($urlRouterProvider) => {
         "ngInject";   // ng-annotate doesn't handle arrow functions automatically; need to add the directive prologue.
-        $urlRouterProvider.otherwise('/home');
+        $urlRouterProvider.otherwise('/users');
     })
     .component('app', appComponent)
 ;
